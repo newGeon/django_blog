@@ -4,7 +4,7 @@
     {% for post in post_list %}
         <div class="post">
             <div class="date">
-                <p>작성시간 : {{ post.published_date }}</p>
+                <p>공개시간 : {{ post.published_date }}</p>
             </div>
             <h1>
                 <a href="{% url 'post_detail' pk=post.pk %}">
