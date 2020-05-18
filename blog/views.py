@@ -78,3 +78,8 @@ def post_publish(requset, pk):
     post = get_object_or_404(Post, pk=pk)
     post.publish()
     return redirect('post_detail', post.pk)
+
+
+# login part
+def login_home(request):
+    return render(request, 'account/login.html', {})
